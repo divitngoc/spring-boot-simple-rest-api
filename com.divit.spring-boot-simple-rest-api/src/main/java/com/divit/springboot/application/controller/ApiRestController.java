@@ -21,7 +21,7 @@ public class ApiRestController {
 
 	@GetMapping(value = "/candidates")
 	public ResponseEntity<?> fetchCandidates(@RequestParam(value = "skill", required = false) String skill) {
-		log.info("Response received. Params: skills {}", skill);
+		log.info("Response received. Params: skill {}", skill);
 
 		// Simple util to help us get some dummy data
 		List<Candidate> candidateList = CandidatesUtil.getCandidates();
