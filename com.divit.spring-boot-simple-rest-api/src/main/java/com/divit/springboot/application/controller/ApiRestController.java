@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.divit.springboot.application.model.Candidate;
-import com.divit.srpingboot.application.util.CandidatesUtil;
+import com.divit.springboot.application.util.CandidatesUtil;
 
 import lombok.extern.slf4j.Slf4j;
 
