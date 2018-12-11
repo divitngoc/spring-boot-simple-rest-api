@@ -1,4 +1,4 @@
-package com.divit.srpingboot.application.util;
+package com.divit.springboot.application.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
