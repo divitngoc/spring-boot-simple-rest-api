@@ -26,7 +26,7 @@ public class ApiRestController {
 		// Simple util to help us get some dummy data
 		List<Candidate> candidateList = CandidatesUtil.getCandidates();
 		if (!StringUtils.isEmpty(skill)) {
-			// Filtering by skill
+			// Filter by skill
 			candidateList.removeIf((candidate) -> !candidate.getSkillsSet().contains(skill.toLowerCase()));
 		}
 
