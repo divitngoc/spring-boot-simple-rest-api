@@ -34,6 +34,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>spring-boot-divit-${version}</finalName>
+		<finalName>spring-boot-divit</finalName>
 	</build>
 </project>
