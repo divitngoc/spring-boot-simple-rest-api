@@ -12,6 +12,12 @@ public final class CandidatesUtil {
 	private CandidatesUtil() {
 	}
 
+	/**
+	 * 
+	 * Method to help us get dummy data
+	 * 
+	 * @return list of candidates
+	 */
 	public static List<Candidate> getCandidates() {
 		List<Candidate> candidateList = new ArrayList<>();
 		candidateList.add(new Candidate("John", 2, new HashSet<String>(Arrays.asList("java", "c#", "c++", "golang"))));
