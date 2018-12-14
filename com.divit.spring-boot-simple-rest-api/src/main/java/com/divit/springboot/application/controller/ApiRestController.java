@@ -1,6 +1,7 @@
 package com.divit.springboot.application.controller;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.StringUtils;
@@ -27,7 +28,9 @@ public class ApiRestController {
 		List<Candidate> candidateList = CandidatesUtil.getCandidates();
 		if (!StringUtils.isEmpty(skill)) {
 			// Filter by skill
-			candidateList.removeIf((candidate) -> !candidate.getSkillsSet().contains(skill.toLowerCase()));
+			return ResponseEntity.ok(candidateList.stream()
+							.filter(candidate -> candidate.getSkillsSet().contains(skill.toLowerCase()))
+							.collect(Collectors.toList()));
 		}
 
 		return ResponseEntity.ok(candidateList);
