@@ -1,5 +1,5 @@
 # Spring-boot-simple-rest-api
-This is a simple Spring boot rest api application. Response will return a JSON that will contain candidates data which can be filtered by using a parameter(skill) in the url.
+This is a simple Spring boot rest api application. Response will return a JSON that will contain candidates data which can be filtered by using a parameter (skill) via URL.
 
 ## What you'll need
 Java 11
@@ -11,9 +11,13 @@ lombok
 Docker CE
 
 ## To start
-To start this application, clone this repo(https://github.com/DivitGitHub/spring-boot-simple-rest-api.git)
+To start this application, clone this repo (https://github.com/DivitGitHub/spring-boot-simple-rest-api.git)
 
-Build and run the Application class.
+Build:
+```
+mvn install
+```
+And then run the Application class.
 
 ## To run as a container (Docker)
 build image (root directory of project):
